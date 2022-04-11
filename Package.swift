@@ -11,8 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "MLBarcode",
-            targets: ["nanopb",
-                      "FBLPromises",
+            targets: ["FBLPromises",
                       "GoogleToolboxForMac",
                       "GoogleUtilities",
                       "GoogleUtilitiesComponents",
@@ -26,7 +25,6 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .binaryTarget(name: "nanopb", path: "Sources/MLBarcode/nanopb.xcframework"),
         .binaryTarget(name: "GoogleToolboxForMac", path: "Sources/MLBarcode/GoogleToolboxForMac.xcframework"),
         .binaryTarget(name: "FBLPromises", path: "Sources/MLBarcode/FBLPromises.xcframework"),
         .binaryTarget(name: "GoogleUtilities", path: "Sources/MLBarcode/GoogleUtilities.xcframework"),
