@@ -11,8 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "MLBarcode",
-            targets: ["FBLPromises",
-                      "GoogleToolboxForMac",
+            targets: ["GoogleToolboxForMac",
                       "GoogleUtilities",
                       "GoogleUtilitiesComponents",
                       "GTMSessionFetcher",
@@ -26,7 +25,6 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "GoogleToolboxForMac", path: "Sources/MLBarcode/GoogleToolboxForMac.xcframework"),
-        .binaryTarget(name: "FBLPromises", path: "Sources/MLBarcode/FBLPromises.xcframework"),
         .binaryTarget(name: "GoogleUtilities", path: "Sources/MLBarcode/GoogleUtilities.xcframework"),
         .binaryTarget(name: "GoogleUtilitiesComponents", path: "Sources/MLBarcode/GoogleUtilitiesComponents.xcframework"),
         .binaryTarget(name: "GTMSessionFetcher", path: "Sources/MLBarcode/GTMSessionFetcher.xcframework"),
